@@ -31,7 +31,7 @@ inquirer
         message: 'What would you like to do?',
         choices: [
             'View Departments',
-            'more questions',
+            '',
             'Exit'
         ]
     })
@@ -48,13 +48,12 @@ inquirer
                         console.log(response)
                     } else {
                         console.log('Error!')
+                        console.log(error)
                     }
                 }
             )
         }
-
-
         // if user wants to see roles
-
+        if (choice.userResponse === '')
         // if user wants to see employees
     })
